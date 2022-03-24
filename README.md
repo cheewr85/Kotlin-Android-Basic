@@ -17,6 +17,11 @@
    
    - Pull Request할 때 각 소주제별 Homework Question 답변 남기기
 
+## Issue Rule
+- 각 Lesson 별로 각 Task 소주제별로 당연하게 깊게 생각하지 못하고 넘어간 부분들에 대해서 좀 더 Docs던 레퍼런스던 찾아보면서 남기기
+
+- 조금이라도 의문사항이 생긴다면 이슈를 남겨서 해당 부분에 대해서 꼼꼼하게 체크해 남겨두기 
+
 ## References
 - [코틀린](https://developer.android.com/courses/kotlin-bootcamp/overview?hl=ko)
 - [안드로이드 기초](https://developer.android.com/courses/kotlin-android-fundamentals/overview?hl=ko)
