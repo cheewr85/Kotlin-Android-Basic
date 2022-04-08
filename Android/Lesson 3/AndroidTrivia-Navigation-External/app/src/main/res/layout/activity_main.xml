@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<!--            &lt;!&ndash;TitleFragment 파일에 있는것을 직접 불러와서 넣음&ndash;&gt;-->
+<!--            <fragment-->
+<!--                android:id="@+id/titleFragment"-->
+<!--                android:name="com.example.android.navigation.TitleFragment"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"/>-->
+
+            <!--이전에 Fragment를 직접 불러왔지만 NavHostFragment로 변경함-->
+            <!--여기서 res폴더의 navigation.xml도 연결해줌-->
+            <!--그리고 디폴트 nav로 설정해서 뒤로가기 버튼시 반응함-->
+            <fragment
+                android:id="@+id/myNavHostFragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:navGraph="@navigation/navigation"
+                app:defaultNavHost="true"/>
+
+
+        </LinearLayout>
+        <!--앞서 만든 navdrawer를 사용하기 위해 해당 메뉴 xml 추가-->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/navdrawer_menu"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>
