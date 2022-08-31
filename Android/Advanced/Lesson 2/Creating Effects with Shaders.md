@@ -350,5 +350,5 @@ override fun onDraw(canvas: Canvas) {
 
 - 그리고 다른 tiling mode를 쓸 수 있음, 아래와 같이 보여짐
 
-![one](/Android/img/fiftyfive.png)
+![one](/Android/img/fiftyfive.PNG)
 
